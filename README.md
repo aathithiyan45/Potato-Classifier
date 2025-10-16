@@ -1,9 +1,9 @@
-Potato Disease Classifier 🍟🌱
+# Potato Disease Classifier 🍟🌱
 
-A deep learning-based image classifier for potato types using PyTorch** and efficientNet-B0.  
-The project allows training a model on your potato dataset and predicting the class of new images.
+A deep learning-based image classifier for potato types using **PyTorch** and **EfficientNet-B0**.  
+This project allows training a model on your potato dataset and predicting the class of new images.
 
-1. Contents
+## Contents
 
 - Project Structure
 - Features
@@ -13,8 +13,8 @@ The project allows training a model on your potato dataset and predicting the cl
 - Usage
 - Contributing
 - License
-
-2. Project Structure
+- 
+## Project Structure
 
 potato_demo/
 ├── classifier/
@@ -23,25 +23,27 @@ potato_demo/
 │ ├── urls.py
 │ ├── views.py
 │ ├── utils.py # Prediction code
+│ └── ...
 ├── media/ # Uploaded images for prediction
 ├── train_model.py # Script to train the model
-├── manage.py # Django entry point
+├── manage.py # Django project entry point
 ├── db.sqlite3 # Database
 └── README.md
 
-3. Features
+## Features
 
-- Train a custom EfficientNet-B0 model for potato classification.
+- Train a custom **EfficientNet-B0** model for potato classification.
 - Image preprocessing with augmentation for robust training.
-- Integration with a Django web app for real-time image prediction.
+- Integration with a **Django web app** for real-time image prediction.
 - Easy interface to upload and classify potato images.
 
-4. Installation
+## Installation
 
 1. Clone the repository:
-
+2. 
 git clone https://github.com/aathithiyan45/potato_demo.git
 cd potato_demo
+
 Create and activate a Python virtual environment:
 
 python3 -m venv venv
@@ -49,10 +51,10 @@ source venv/bin/activate   # macOS/Linux
 venv\Scripts\activate      # Windows
 
 Install required dependencies:
+
 pip install torch torchvision timm pillow django
 Dataset
-
-Place your dataset in classifier/datasets/
+Place your dataset in classifier/datasets/ with subfolders for each class.
 
 Example structure:
 
@@ -68,35 +70,43 @@ datasets/
 └── YukonGold/
     ├── img1.jpg
     └── ...
-Training
-Run the training script:
 
+Training
+
+Run the training script:
 python train_model.py
-Model will be saved automatically in:
+
+The trained model will be saved automatically at:
 classifier/ml_models/potato_classifier.pth
 
-Training uses 5 epochs by default (adjustable in train_model.py).
+Default training is 5 epochs (adjustable in train_model.py).
 
 Usage
-Start the Django server:
 
+Start the Django server:
 python manage.py runserver
 
 Open your browser at:
-
 http://127.0.0.1:8000/
 Upload a potato image to get predictions.
 
 Contributing
+
 Contributions, suggestions, and bug reports are welcome!
-Open an issue or submit a pull request.
+Please open an issue or submit a pull request.
 
 License
+
 This project is licensed under the MIT License. See LICENSE file for details.
 
-Author: Aathithiyan P(@aathithiyan45)
+Author: Aathithiyan Sir (@aathithiyan45)
 
-If you want, I can also add badgesike PyTorch version, Python version, or “Training Status” to make it look even more like a polished professional GitHub repo.  
+If you want, I can also **add professional GitHub badges** like:
+
+- Python version
+- PyTorch version
+- Training status
+- License
 
 
 
