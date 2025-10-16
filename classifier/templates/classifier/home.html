@@ -1,0 +1,25 @@
+<!-- classifier/templates/classifier/home.html -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potato Variety Predictor</title>
+</head>
+<body style="margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; font-family: Arial, sans-serif; background: linear-gradient(135deg, #f6d365, #fda085);">
+
+    <div style="background-color: white; padding: 40px 60px; border-radius: 12px; box-shadow: 0 8px 20px rgba(0,0,0,0.2); text-align: center; width: 100%; max-width: 400px;">
+        <h1 style="margin-bottom: 30px; color: #333;">Upload a Potato Image</h1>
+        
+        <form method="post" enctype="multipart/form-data" style="display: flex; flex-direction: column; align-items: center; gap: 20px;">
+            {% csrf_token %}
+            <input type="file" name="image" required style="padding: 8px; border-radius: 6px; border: 1px solid #ccc; width: 100%;">
+            <button type="submit" style="padding: 10px 20px; background-color: #4CAF50; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px;">Predict</button>
+        </form>
+
+        {% if result %}
+            <h2 style="margin-top: 30px; color: #555;">Predicted Variety: {{ result }}</h2>
+        {% endif %}
+    </div>
+
+</body>
+</html>
