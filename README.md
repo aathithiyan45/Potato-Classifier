@@ -61,7 +61,7 @@ Please open an issue or submit a pull request.
 License
 This project is licensed under the MIT License. See LICENSE file for details.
 
-Author: Aathithiyan Sir (@aathithiyan45)
+Author: Aathithiyan P (@aathithiyan45)
 
 
 If you want, I can also **add badges** for Python version, PyTorch, and License so your README looks **more professional and portfolio-ready**.  
