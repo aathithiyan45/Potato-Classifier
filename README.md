@@ -5,18 +5,6 @@ This project allows training a model on your potato dataset and predicting the c
 
 ---
 
-## Contents
-
-- Features
-- Installation
-- Dataset
-- Training
-- Usage
-- Contributing
-- License
-
----
-
 ## Features
 
 - Train a custom **EfficientNet-B0** model for potato classification.
@@ -30,38 +18,41 @@ This project allows training a model on your potato dataset and predicting the c
 
 1. Clone the repository:
 
-git clone https://github.com/aathithiyan45/Potato-Classifier.git
-cd Potato-Classifier
-Create and activate a Python virtual environment:
+- git clone https://github.com/aathithiyan45/Potato-Classifier.git
+- cd Potato-Classifier
+  
+2. Create and activate a Python virtual environment:
 
-python3 -m venv venv
-source venv/bin/activate   # macOS/Linux
-venv\Scripts\activate      # Windows
-Install required dependencies:
-pip install torch torchvision timm pillow django
+- python3 -m venv venv
+- source venv/bin/activate   # macOS/Linux
+- venv\Scripts\activate      # Windows
+  
+4. Install required dependencies:
 
-Dataset
-Place your dataset in classifier/datasets/ with subfolders for each class.
+- pip install torch torchvision timm pillow django
+  
+5. Dataset
+   
+- Place your dataset in classifier/datasets/ with subfolders for each class.
 
-python train_model.py
+6. python train_model.py
 
-The trained model will be saved automatically at:
-classifier/ml_models/potato_classifier.pth
+- The trained model will be saved automatically at:
+- classifier/ml_models/potato_classifier.pth
 
-Default training is 5 epochs (adjustable in train_model.py).
+- Default training is 5 epochs (adjustable in train_model.py).
 
-Usage
-Start the Django server:
+7. Usage
 
-bash
-Copy code
-python manage.py runserver
-Open your browser at:
+- Start the Django server:
 
-cpp
-Copy code
-http://127.0.0.1:8000/
-Upload a potato image to get predictions.
+-python manage.py runserver
+
+8. Open your browser at:
+
+-http://127.0.0.1:8000/
+
+9. Upload a potato image to get predictions.
 
 Contributing
 Contributions, suggestions, and bug reports are welcome!
@@ -72,10 +63,6 @@ This project is licensed under the MIT License. See LICENSE file for details.
 
 Author: Aathithiyan Sir (@aathithiyan45)
 
-yaml
-Copy code
-
----
 
 If you want, I can also **add badges** for Python version, PyTorch, and License so your README looks **more professional and portfolio-ready**.  
 
