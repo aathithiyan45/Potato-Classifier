@@ -66,4 +66,4 @@ Author: Aathithiyan P (@aathithiyan45)
 
 If you want, I can also **add badges** for Python version, PyTorch, and License so your README looks **more professional and portfolio-ready**.  
 
-Do you want me to do that next?
+Do you want me to do that next?  
