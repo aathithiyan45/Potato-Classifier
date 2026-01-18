@@ -44,7 +44,7 @@ This project allows training a model on your potato dataset and predicting the c
 
 7. Usage
 
-- Start the Django server:
+- Start the Django server:  
 
 - python manage.py runserver
 
