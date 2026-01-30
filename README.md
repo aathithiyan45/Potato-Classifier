@@ -10,7 +10,7 @@ This project allows training a model on your potato dataset and predicting the c
 - Train a custom **EfficientNet-B0** model for potato classification.
 - Image preprocessing with augmentation for robust training.
 - Integration with a **Django web app** for real-time image prediction.
-- Easy interface to upload and classify potato images.
+- Easy interface to upload and classify potato images...
 
 ---
 
